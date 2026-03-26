@@ -125,7 +125,7 @@ while(cap.isOpened()):
         # write dt
         cv2.putText(frame, f"dt: {dt:.3f} [s]", (40, 140), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
         # write frame number
-        cv2.putText(frame, f"frame: {i}", (40, 180), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
+        cv2.putText(frame, f"frame: {frame_counter}", (40, 180), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
 
         # open named window, resize, show frame, wait
         cv2.namedWindow("Tennis ball tracking", cv2.WINDOW_NORMAL)
